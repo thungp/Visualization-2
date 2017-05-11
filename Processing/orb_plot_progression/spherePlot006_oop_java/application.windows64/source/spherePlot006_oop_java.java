@@ -1,25 +1,34 @@
+import processing.core.*; 
+import processing.data.*; 
+import processing.event.*; 
+import processing.opengl.*; 
+
+import java.util.HashMap; 
+import java.util.ArrayList; 
+import java.io.File; 
+import java.io.BufferedReader; 
+import java.io.PrintWriter; 
+import java.io.InputStream; 
+import java.io.OutputStream; 
+import java.io.IOException; 
+
+public class spherePlot006_oop_java extends PApplet {
+
 /*
  Sphere Plot - 3D OOP
  planets JSON data
  interactive Feedback
- 
- Change Log:
- * Made Sphere randomly populate in the Z direction
- * Added rotation currently in the X and Z direction based on frameCount
- 
  */
 
 JSONArray planetsData;
-int adjZ = 0;
-int adjZFactor = 100;
 
 Planet[] orbs;
 PFont font;
 float plotRadii, sclFactor;
-float attraction = 1.0;
+float attraction = 1.0f;
 
-void setup() {
-  size(1000, 1000, P3D);
+public void setup() {
+  
   noStroke();
   ortho();
 
@@ -28,42 +37,24 @@ void setup() {
   planetsData =loadJSONArray("planets.json");
   // size arrays
   int dataSize = planetsData.size();
-  attraction = 1.0 - 1.0/(dataSize*10);
+  attraction = 1.0f - 1.0f/(dataSize*10);
 
   orbs = new Planet[dataSize];
   for (int i=0; i<dataSize; i++) {
     plotRadii += PI*planetsData.getJSONObject(i).getFloat("mass")*planetsData.getJSONObject(i).getFloat("mass");
   }
-  float canvasArea = PI*(width/2.6)*(width/2.6);
+  float canvasArea = PI*(width/2.6f)*(width/2.6f);
   sclFactor = sqrt(canvasArea/plotRadii);
   println(sclFactor);
 
 
   for (int i=0; i<dataSize; i++) {
     JSONObject planet = planetsData.getJSONObject(i); 
-    orbs[i] = new Planet(this, new PVector(random(-2, 2), random(-2, 2), random(-2, 2)), planet.getFloat("mass")*sclFactor, i, planet.getString("composition"));
+    orbs[i] = new Planet(this, new PVector(random(-2, 2), random(-2, 2)), planet.getFloat("mass")*sclFactor, i, planet.getString("composition"));
   }
 }
 
-void keyPressed() {
-  int keyIndex = -1;
-  if (key >= 'A' && key <= 'Z') {
-    keyIndex = key - 'A';
-  } else if (key >= 'a' && key <= 'z') {
-    keyIndex = key - 'a';
-  }
-  if (keyIndex == -1) {
-    // If it's not a letter key, clear the screen
-    adjZ = adjZ + adjZFactor;
-  } else { 
-    // It's a letter key, fill a rectangle
-    adjZ= adjZ - adjZFactor;
-    //fill(millis() % 255);
-    //float x = map(keyIndex, 0, 25, 0, width - rectWidth);
-    //rect(x, 0, rectWidth, height);
-  }
-}
-void draw() {
+public void draw() {
   background(25);
   ambientLight(85, 85, 85);
   emissive(30, 0, 0);
@@ -72,26 +63,17 @@ void draw() {
   pointLight(150, 150, 150, -100, 100, 800);
   specular(255, 255, 255);
   shininess(95);
-  // set modelview matrix
-  float eye = 20 + mouseY;
-  camera(width/2.0 + adjZ, height/2.0, ((height/2.0)) / tan(PI*30.0 / 180.0) ,   width/2.0, height/2.0, 0,   0, 1, 0);
-  
-  translate(width/2, height/2 );
-  // rotate around the center of the sketch
-  rotateZ(radians(frameCount));
-  rotateX(radians(frameCount));
-  
+
+  translate(width/2, height/2);
   // orb-orb collision
   for (int i=0; i<orbs.length; i++) {
     for (int j=i; j<orbs.length; j++) {
       if (i!=j) {
-        //float r2 = (orbs[i].radius + orbs[j].radius)*1.2;
         float r2 = orbs[i].radius + orbs[j].radius;
-        //float d = dist(orbs[i].loc.x, orbs[i].loc.y, orbs[j].loc.x, orbs[j].loc.y);
-        float d = dist(orbs[i].loc.x, orbs[i].loc.y, orbs[i].loc.z, orbs[j].loc.x, orbs[j].loc.y, orbs[j].loc.z);
+        float d = dist(orbs[i].loc.x, orbs[i].loc.y, orbs[j].loc.x, orbs[j].loc.y);
         if (d < r2) {
           if (d==0) { // avoid dist of 0
-            orbs[i].loc.add(new PVector(random(.1, .1), random(.1, .1), random(.1, .1)));
+            orbs[i].loc.add(new PVector(random(.1f, .1f), random(.1f, .1f)));
           }
           PVector axis = PVector.sub(orbs[i].loc, orbs[j].loc);
           axis.normalize();
@@ -99,16 +81,13 @@ void draw() {
           temp.set(orbs[i].loc);
           orbs[i].loc.x = orbs[j].loc.x + axis.x*r2;
           orbs[i].loc.y = orbs[j].loc.y + axis.y*r2;
-          orbs[i].loc.z = orbs[j].loc.z + axis.z*r2;
           orbs[j].loc.x = temp.x - axis.x*r2;
           orbs[j].loc.y = temp.y - axis.y*r2;
-          orbs[j].loc.z = temp.z - axis.z*r2;
         }
       }
     }
     orbs[i].loc.x *= attraction;
     orbs[i].loc.y *= attraction;
-    orbs[i].loc.z *= attraction;
   }
 
 
@@ -149,6 +128,16 @@ void draw() {
       String s = "  Planet ID:  " + orbs[i].id + "       Composition:  " + orbs[i].composition +"       Mass: " + orbs[i].radius;
       float w = textWidth(s);
       text(s, (-w)/2, height/2-20, 100);
+    }
+  }
+}
+  public void settings() {  size(1000, 1000, P3D); }
+  static public void main(String[] passedArgs) {
+    String[] appletArgs = new String[] { "spherePlot006_oop_java" };
+    if (passedArgs != null) {
+      PApplet.main(concat(appletArgs, passedArgs));
+    } else {
+      PApplet.main(appletArgs);
     }
   }
 }
