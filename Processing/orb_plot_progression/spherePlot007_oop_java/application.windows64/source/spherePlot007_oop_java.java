@@ -142,14 +142,20 @@ public void draw() {
     line(orbs[0].loc.x, orbs[0].loc.y, orbs[0].loc.z, orbs[i].loc.x, orbs[i].loc.y, orbs[i].loc.z);
   }
   for (int i=0; i<orbs.length; i++) {
-    pushMatrix();
+    //pushMatrix();
+    
+    /*
     translate(orbs[i].loc.x, orbs[i].loc.y, orbs[i].loc.z);
     rotateX(orbs[i].rot.x);
     rotateY(orbs[i].rot.y);
     rotateZ(orbs[i].rot.z);
     noStroke();
+    */
+    
     orbs[i].display();
-    popMatrix();
+
+    
+   // popMatrix();
 
     // boundary collison
     if (orbs[i].loc.x > width/2-orbs[i].radius) {

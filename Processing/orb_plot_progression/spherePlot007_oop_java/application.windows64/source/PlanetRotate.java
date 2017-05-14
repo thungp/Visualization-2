@@ -20,9 +20,30 @@ public class PlanetRotate extends Planet{
     }
     
   public void display() {
-    p.pushMatrix();
 
-    s.display();
+    p.pushMatrix();
+    p.translate(loc.x, loc.y, loc.z);
+    
+    
+    p.rotateX(rot.x);
+    p.rotateY(rot.y);
+    p.rotateZ(rot.z);
+    
+
+    p.noStroke();
+                p.box(1.2f * this.radius);
+            if (PApplet.second() % 1 == 0) {  // if I make a 1 a 2 there is a pause in the rotations.
+                rot = new PVector(p.random(p.QUARTER_PI), p.random(p.QUARTER_PI), p.random(p.QUARTER_PI)); // this is what needs to change to rotate sphere
+            }
+        p.pushMatrix();
+
+            s.display();    
+
+        p.popMatrix();
+        
+        p.pushMatrix();
+
+        p.popMatrix();
 
     p.popMatrix();
     //p.pushMatrix();
@@ -33,9 +54,9 @@ public class PlanetRotate extends Planet{
         //p.getMatrix().rotateY(PApplet.radians(rotateDegree % 360));
       
         //p.rect(this.loc.x, this.loc.x, this.radius, this.radius);
-        p.box(1.2f * this.radius);
+        //p.box(1.2f * this.radius);
         //rotateDegree = rotateDegree + 1;
-        rot = new PVector(p.random(p.QUARTER_PI), p.random(p.QUARTER_PI), p.random(p.QUARTER_PI)); // this is what needs to change to rotate sphere
+        //rot = new PVector(p.random(p.QUARTER_PI), p.random(p.QUARTER_PI), p.random(p.QUARTER_PI)); // this is what needs to change to rotate sphere
     }
     //p.popMatrix();
     
