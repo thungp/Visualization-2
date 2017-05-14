@@ -48,9 +48,9 @@ public void setup() {
   planetsData =loadJSONArray("planets.json");
   // size arrays
   int dataSize = planetsData.size();
-  attraction = 1.0f + 1.0f/(dataSize*10);
+  attraction = 1.0f - 1.0f/(dataSize*10);
 
-  orbs = new Planet[dataSize];
+  orbs = new PlanetRotate[dataSize];
   for (int i=0; i<dataSize; i++) {
     plotRadii += PI*planetsData.getJSONObject(i).getFloat("mass")*planetsData.getJSONObject(i).getFloat("mass");
   }
@@ -61,7 +61,7 @@ public void setup() {
 
   for (int i=0; i<dataSize; i++) {
     JSONObject planet = planetsData.getJSONObject(i); 
-    orbs[i] = new Planet(this, new PVector(random(-2, 2), random(-2, 2), random(-2, 2)), planet.getFloat("mass")*sclFactor, i, planet.getString("composition"));
+    orbs[i] = new PlanetRotate(this, new PVector(random(-2, 2), random(-2, 2), random(-2, 2)), planet.getFloat("mass")*sclFactor, i, planet.getString("composition"));
   }
 }
 
@@ -104,8 +104,8 @@ public void draw() {
   
   translate(width/2, height/2 );
   // rotate around the center of the sketch
-  rotateZ(radians(frameCount/4));
-  rotateX(radians(frameCount/4));
+  //rotateZ(radians(frameCount/4));
+  //rotateX(radians(frameCount/4));
   
   // orb-orb collision
   for (int i=0; i<orbs.length; i++) {
