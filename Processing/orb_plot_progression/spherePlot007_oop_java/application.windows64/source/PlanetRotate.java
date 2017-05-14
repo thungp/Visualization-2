@@ -31,10 +31,12 @@ public class PlanetRotate extends Planet{
     
 
     p.noStroke();
-                p.box(1.2f * this.radius);
-            if (PApplet.second() % 1 == 0) {  // if I make a 1 a 2 there is a pause in the rotations.
-                rot = new PVector(p.random(p.QUARTER_PI), p.random(p.QUARTER_PI), p.random(p.QUARTER_PI)); // this is what needs to change to rotate sphere
-            }
+                p.box(1.2f * this.radius); // used for debugging purposes.
+        
+        // note this doesn't need to be in here, can be external to this.
+        if (PApplet.second() % 1 == 0) {  // if I make a 1 a 2 there is a pause in the rotations.
+            rot = new PVector(p.random(p.QUARTER_PI), p.random(p.QUARTER_PI), p.random(p.QUARTER_PI)); // this is what needs to change to rotate sphere
+        }
         p.pushMatrix();
 
             s.display();    
