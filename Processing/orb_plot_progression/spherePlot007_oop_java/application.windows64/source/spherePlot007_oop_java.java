@@ -37,6 +37,8 @@ Planet[] orbs;
 PFont font;
 float plotRadii, sclFactor;
 float attraction = 1.0f;
+Menu menu;
+int bgCol = 0xffddddff;
 
 public void setup() {
   
@@ -63,6 +65,18 @@ public void setup() {
     JSONObject planet = planetsData.getJSONObject(i); 
     orbs[i] = new PlanetRotate(this, new PVector(random(-2, 2), random(-2, 2), random(-2, 2)), planet.getFloat("mass")*sclFactor, i, planet.getString("composition"));
   }
+  
+  // Menu Setup
+    String[] labels = {
+	    "worms", "rays", "blockies", "spiders", "soup"
+	  };
+    int[] states = {
+	    //offState, onState, overState, pressState
+	    0xffeebfbb, bgCol, 0xffeeffef, 0xffffaa66
+	  };
+    println("this = " + this);
+    menu = new Menu(this, Layout.TOP, new Dimension(width, 23), labels, states, ButtonType.RECT);
+  
 }
 
 public void keyPressed() {
@@ -95,6 +109,9 @@ public void draw() {
   // set modelview matrix
   float eye = 20 + mouseY;
   camera(width/2.0f + adjZ, height/2.0f, ((height/2.0f)) / tan(PI*30.0f / 180.0f) ,   width/2.0f, height/2.0f, 0,   0, 1, 0);
+  
+  // display menu
+  menu.display();
   
   fill(85);
   textFont(font, 23);
