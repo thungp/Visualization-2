@@ -1,0 +1,1286 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "ebbj-sh54",
+      "name" : "Impaired Driving Death Rate, by Age and Gender, 2012 & 2014, All States",
+      "attribution" : "National Center for Injury Prevention and Control, Division of Unintentional Injury Prevention",
+      "attributionLink" : "http://www.cdc.gov/motorvehiclesafety",
+      "averageRating" : 0,
+      "category" : "Motor Vehicle",
+      "createdAt" : 1418657153,
+      "description" : "Rate of deaths by age/gender (per 100,000 population) for people killed in crashes involving a driver with BAC =>0.08%, 2012. 2012 Source: Fatality Analysis Reporting System (FARS)Note: Blank cells indicate data are suppressed. 2014 Source: Source: National Highway Traffic Administration's (NHTSA) Fatality Analysis Reporting System (FARS), 2014 Annual Report File. Fatality rates based on fewer than 20 deaths are suppressed.",
+      "displayType" : "table",
+      "downloadCount" : 12233,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1474917681,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 24096911,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1474917437,
+      "publicationGroup" : 1979129,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1474914605,
+      "rowsUpdatedBy" : "cg4e-25jx",
+      "tableId" : 13325641,
+      "totalTimesRated" : 0,
+      "viewCount" : 1079,
+      "viewLastModified" : 1474917437,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 271108120,
+        "name" : "State ",
+        "dataTypeName" : "text",
+        "description" : "Not geocoded",
+        "fieldName" : "state_not_geocoded",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 23363205,
+        "width" : 118,
+        "cachedContents" : {
+          "largest" : "Wyoming",
+          "non_null" : 52,
+          "null" : 0,
+          "top" : [ {
+            "item" : "South Carolina",
+            "count" : 20
+          }, {
+            "item" : "South Dakota",
+            "count" : 19
+          }, {
+            "item" : "Tennessee",
+            "count" : 18
+          }, {
+            "item" : "Texas",
+            "count" : 17
+          }, {
+            "item" : "Utah",
+            "count" : 16
+          }, {
+            "item" : "Vermont",
+            "count" : 15
+          }, {
+            "item" : "Virginia",
+            "count" : 14
+          }, {
+            "item" : "Washington",
+            "count" : 13
+          }, {
+            "item" : "West Virginia",
+            "count" : 12
+          }, {
+            "item" : "Wisconsin",
+            "count" : 11
+          }, {
+            "item" : "Wyoming",
+            "count" : 10
+          } ],
+          "smallest" : "Alabama"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 271108133,
+        "name" : "Location",
+        "dataTypeName" : "location",
+        "description" : "Geocoded",
+        "fieldName" : "state_geocoded",
+        "position" : 2,
+        "renderTypeName" : "location",
+        "tableColumnId" : 23363212,
+        "width" : 110,
+        "cachedContents" : {
+          "largest" : {
+            "latitude" : "43.23554100600006",
+            "human_address" : "{\"address\":\"Wyoming\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+            "longitude" : "-108.10982701399996"
+          },
+          "non_null" : 52,
+          "null" : 0,
+          "top" : [ {
+            "item" : {
+              "latitude" : "33.99882216300006",
+              "human_address" : "{\"address\":\"South Carolina\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-81.04536596899999"
+            },
+            "count" : 20
+          }, {
+            "item" : {
+              "latitude" : "44.35313004200003",
+              "human_address" : "{\"address\":\"South Dakota\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-100.37352915599996"
+            },
+            "count" : 19
+          }, {
+            "item" : {
+              "latitude" : "35.68094072700006",
+              "human_address" : "{\"address\":\"Tennessee\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-85.77448666899994"
+            },
+            "count" : 18
+          }, {
+            "item" : {
+              "latitude" : "31.827240467000024",
+              "human_address" : "{\"address\":\"Texas\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-99.42676785299994"
+            },
+            "count" : 17
+          }, {
+            "item" : {
+              "latitude" : "39.36070123200005",
+              "human_address" : "{\"address\":\"Utah\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-111.58712831499997"
+            },
+            "count" : 16
+          }, {
+            "item" : {
+              "latitude" : "43.62538389600007",
+              "human_address" : "{\"address\":\"Vermont\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-72.51763667599994"
+            },
+            "count" : 15
+          }, {
+            "item" : {
+              "latitude" : "37.542680705000066",
+              "human_address" : "{\"address\":\"Virginia\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-78.45788932099998"
+            },
+            "count" : 14
+          }, {
+            "item" : {
+              "latitude" : "47.52228790000004",
+              "human_address" : "{\"address\":\"Washington\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-120.47002813699999"
+            },
+            "count" : 13
+          }, {
+            "item" : {
+              "latitude" : "38.66551127300005",
+              "human_address" : "{\"address\":\"\",\"city\":\"West\",\"state\":\"Virginia\",\"zip\":\"\"}",
+              "longitude" : "-80.71263755899997"
+            },
+            "count" : 12
+          }, {
+            "item" : {
+              "latitude" : "44.39319064600005",
+              "human_address" : "{\"address\":\"Wisconsin\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-89.81636640199997"
+            },
+            "count" : 11
+          }, {
+            "item" : {
+              "latitude" : "43.23554100600006",
+              "human_address" : "{\"address\":\"Wyoming\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}",
+              "longitude" : "-108.10982701399996"
+            },
+            "count" : 10
+          } ],
+          "smallest" : {
+            "latitude" : "38.66551127300005",
+            "human_address" : "{\"address\":\"\",\"city\":\"West\",\"state\":\"Virginia\",\"zip\":\"\"}",
+            "longitude" : "-80.71263755899997"
+          }
+        },
+        "format" : {
+          "view" : "coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 271108121,
+        "name" : "All Ages, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "all_ages",
+        "position" : 3,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363209,
+        "width" : 104,
+        "cachedContents" : {
+          "largest" : "11.3",
+          "non_null" : 50,
+          "average" : "3.916000000000000",
+          "null" : 2,
+          "top" : [ {
+            "item" : "3.3",
+            "count" : 20
+          }, {
+            "item" : "5.5",
+            "count" : 19
+          }, {
+            "item" : "3.6",
+            "count" : 18
+          }, {
+            "item" : "5.0999999999999996",
+            "count" : 17
+          }, {
+            "item" : "2",
+            "count" : 16
+          }, {
+            "item" : "2.5",
+            "count" : 15
+          }, {
+            "item" : "2.4",
+            "count" : 14
+          }, {
+            "item" : "3.8",
+            "count" : 13
+          }, {
+            "item" : "3.7",
+            "count" : 12
+          }, {
+            "item" : "3",
+            "count" : 11
+          }, {
+            "item" : "3.2",
+            "count" : 10
+          }, {
+            "item" : "3.4",
+            "count" : 9
+          }, {
+            "item" : "4",
+            "count" : 8
+          }, {
+            "item" : "5.2",
+            "count" : 7
+          }, {
+            "item" : "2.7",
+            "count" : 6
+          }, {
+            "item" : "1.8",
+            "count" : 5
+          }, {
+            "item" : "2.1",
+            "count" : 4
+          }, {
+            "item" : "6.1",
+            "count" : 3
+          }, {
+            "item" : "4.8",
+            "count" : 2
+          }, {
+            "item" : "9.4",
+            "count" : 1
+          } ],
+          "smallest" : "1.2",
+          "sum" : "195.7999999999999996"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108122,
+        "name" : "All Ages, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "all_ages_2014",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379323,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "8.2",
+          "non_null" : 49,
+          "average" : "3.624489795918367",
+          "null" : 3,
+          "top" : [ {
+            "item" : "3.1",
+            "count" : 20
+          }, {
+            "item" : "5.5",
+            "count" : 19
+          }, {
+            "item" : "2.8",
+            "count" : 18
+          }, {
+            "item" : "3.0",
+            "count" : 17
+          }, {
+            "item" : "4.6",
+            "count" : 16
+          }, {
+            "item" : "2.2",
+            "count" : 15
+          }, {
+            "item" : "2.7",
+            "count" : 14
+          }, {
+            "item" : "5.2",
+            "count" : 13
+          }, {
+            "item" : "3.5",
+            "count" : 12
+          }, {
+            "item" : "3.3",
+            "count" : 11
+          }, {
+            "item" : "2.4",
+            "count" : 10
+          }, {
+            "item" : "3.2",
+            "count" : 9
+          }, {
+            "item" : "3.6",
+            "count" : 8
+          }, {
+            "item" : "3.9",
+            "count" : 7
+          }, {
+            "item" : "5.4",
+            "count" : 6
+          }, {
+            "item" : "1.9",
+            "count" : 5
+          }, {
+            "item" : "6.0",
+            "count" : 4
+          }, {
+            "item" : "3.4",
+            "count" : 3
+          }, {
+            "item" : "7.3",
+            "count" : 2
+          }, {
+            "item" : "1.8",
+            "count" : 1
+          } ],
+          "smallest" : "1.6",
+          "sum" : "177.6"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108123,
+        "name" : "Ages 0-20, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_0_20",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363206,
+        "width" : 85,
+        "cachedContents" : {
+          "largest" : "2.8",
+          "non_null" : 24,
+          "average" : "1.620833333333333",
+          "null" : 28,
+          "top" : [ {
+            "item" : "1.3",
+            "count" : 20
+          }, {
+            "item" : "2.7",
+            "count" : 19
+          }, {
+            "item" : "1.6",
+            "count" : 18
+          }, {
+            "item" : "0.9",
+            "count" : 17
+          }, {
+            "item" : "1.2",
+            "count" : 16
+          }, {
+            "item" : "1",
+            "count" : 15
+          }, {
+            "item" : "0.7",
+            "count" : 14
+          }, {
+            "item" : "2.2999999999999998",
+            "count" : 13
+          }, {
+            "item" : "1.8",
+            "count" : 12
+          }, {
+            "item" : "2.8",
+            "count" : 11
+          }, {
+            "item" : "1.1000000000000001",
+            "count" : 10
+          }, {
+            "item" : "2.6",
+            "count" : 9
+          }, {
+            "item" : "1.9",
+            "count" : 8
+          }, {
+            "item" : "0.6",
+            "count" : 7
+          }, {
+            "item" : "1.7",
+            "count" : 6
+          }, {
+            "item" : "1.4",
+            "count" : 5
+          }, {
+            "item" : "2.1",
+            "count" : 4
+          } ],
+          "smallest" : "0.6",
+          "sum" : "38.8999999999999999"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108124,
+        "name" : "Ages 0-20, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_0_20_2014",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379326,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "2.8",
+          "non_null" : 18,
+          "average" : "1.411111111111111",
+          "null" : 34,
+          "top" : [ {
+            "item" : "1.2",
+            "count" : 20
+          }, {
+            "item" : "2.1",
+            "count" : 19
+          }, {
+            "item" : "1.0",
+            "count" : 18
+          }, {
+            "item" : "1.7",
+            "count" : 17
+          }, {
+            "item" : "0.8",
+            "count" : 16
+          }, {
+            "item" : "0.7",
+            "count" : 15
+          }, {
+            "item" : "2.0",
+            "count" : 14
+          }, {
+            "item" : "1.8",
+            "count" : 13
+          }, {
+            "item" : "2.8",
+            "count" : 12
+          }, {
+            "item" : "1.4",
+            "count" : 11
+          }, {
+            "item" : "2.3",
+            "count" : 10
+          } ],
+          "smallest" : "0.7",
+          "sum" : "25.4"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108125,
+        "name" : "Ages 21-34, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_21_34",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363207,
+        "width" : 116,
+        "cachedContents" : {
+          "largest" : "21.4",
+          "non_null" : 42,
+          "average" : "7.971428571428571",
+          "null" : 10,
+          "top" : [ {
+            "item" : "6.7",
+            "count" : 20
+          }, {
+            "item" : "10.3",
+            "count" : 19
+          }, {
+            "item" : "6.9",
+            "count" : 18
+          }, {
+            "item" : "10.5",
+            "count" : 17
+          }, {
+            "item" : "4.5",
+            "count" : 16
+          }, {
+            "item" : "5.6",
+            "count" : 15
+          }, {
+            "item" : "5.9",
+            "count" : 14
+          }, {
+            "item" : "8",
+            "count" : 13
+          }, {
+            "item" : "5.8",
+            "count" : 12
+          }, {
+            "item" : "8.6999999999999993",
+            "count" : 11
+          }, {
+            "item" : "6",
+            "count" : 10
+          }, {
+            "item" : "7.2",
+            "count" : 9
+          }, {
+            "item" : "8.6",
+            "count" : 8
+          }, {
+            "item" : "3.3",
+            "count" : 7
+          }, {
+            "item" : "6.8",
+            "count" : 6
+          }, {
+            "item" : "3.7",
+            "count" : 5
+          }, {
+            "item" : "12",
+            "count" : 4
+          }, {
+            "item" : "9.5",
+            "count" : 3
+          }, {
+            "item" : "21.4",
+            "count" : 2
+          }, {
+            "item" : "6.5",
+            "count" : 1
+          } ],
+          "smallest" : "3.3",
+          "sum" : "334.7999999999999985"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108126,
+        "name" : "Ages 21-34, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_21_34_2014",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379327,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "15.4",
+          "non_null" : 41,
+          "average" : "7.173170731707317",
+          "null" : 11,
+          "top" : [ {
+            "item" : "6.2",
+            "count" : 20
+          }, {
+            "item" : "10.0",
+            "count" : 19
+          }, {
+            "item" : "5.5",
+            "count" : 18
+          }, {
+            "item" : "6.3",
+            "count" : 17
+          }, {
+            "item" : "4.6",
+            "count" : 16
+          }, {
+            "item" : "5.6",
+            "count" : 15
+          }, {
+            "item" : "6.1",
+            "count" : 14
+          }, {
+            "item" : "11.7",
+            "count" : 13
+          }, {
+            "item" : "7.4",
+            "count" : 12
+          }, {
+            "item" : "5.2",
+            "count" : 11
+          }, {
+            "item" : "7.8",
+            "count" : 10
+          }, {
+            "item" : "9.4",
+            "count" : 9
+          }, {
+            "item" : "5.4",
+            "count" : 8
+          }, {
+            "item" : "4.0",
+            "count" : 7
+          }, {
+            "item" : "5.1",
+            "count" : 6
+          }, {
+            "item" : "3.5",
+            "count" : 5
+          }, {
+            "item" : "10.8",
+            "count" : 4
+          }, {
+            "item" : "6.9",
+            "count" : 3
+          }, {
+            "item" : "15.4",
+            "count" : 2
+          }, {
+            "item" : "7.0",
+            "count" : 1
+          } ],
+          "smallest" : "3.0",
+          "sum" : "294.1"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108127,
+        "name" : "Ages 35+, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_35",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363208,
+        "width" : 85,
+        "cachedContents" : {
+          "largest" : "12",
+          "non_null" : 46,
+          "average" : "3.584782608695652",
+          "null" : 6,
+          "top" : [ {
+            "item" : "3.1",
+            "count" : 20
+          }, {
+            "item" : "5",
+            "count" : 19
+          }, {
+            "item" : "3.3",
+            "count" : 18
+          }, {
+            "item" : "4.3",
+            "count" : 17
+          }, {
+            "item" : "1.8",
+            "count" : 16
+          }, {
+            "item" : "2",
+            "count" : 15
+          }, {
+            "item" : "2.1",
+            "count" : 14
+          }, {
+            "item" : "4",
+            "count" : 13
+          }, {
+            "item" : "3.2",
+            "count" : 12
+          }, {
+            "item" : "2.7",
+            "count" : 11
+          }, {
+            "item" : "3.5",
+            "count" : 10
+          }, {
+            "item" : "2.9",
+            "count" : 9
+          }, {
+            "item" : "3",
+            "count" : 8
+          }, {
+            "item" : "3.7",
+            "count" : 7
+          }, {
+            "item" : "5.0999999999999996",
+            "count" : 6
+          }, {
+            "item" : "2.8",
+            "count" : 5
+          }, {
+            "item" : "2.2000000000000002",
+            "count" : 4
+          }, {
+            "item" : "1.7",
+            "count" : 3
+          }, {
+            "item" : "5.7",
+            "count" : 2
+          }, {
+            "item" : "4.4000000000000004",
+            "count" : 1
+          } ],
+          "smallest" : "1.4",
+          "sum" : "164.9000000000000012"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108128,
+        "name" : "Ages 35+, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_35_2014",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379328,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "8.1",
+          "non_null" : 46,
+          "average" : "3.536956521739130",
+          "null" : 6,
+          "top" : [ {
+            "item" : "3.0",
+            "count" : 20
+          }, {
+            "item" : "5.5",
+            "count" : 19
+          }, {
+            "item" : "3.1",
+            "count" : 18
+          }, {
+            "item" : "5.4",
+            "count" : 17
+          }, {
+            "item" : "2.0",
+            "count" : 16
+          }, {
+            "item" : "2.6",
+            "count" : 15
+          }, {
+            "item" : "2.5",
+            "count" : 14
+          }, {
+            "item" : "4.6",
+            "count" : 13
+          }, {
+            "item" : "2.9",
+            "count" : 12
+          }, {
+            "item" : "2.2",
+            "count" : 11
+          }, {
+            "item" : "3.2",
+            "count" : 10
+          }, {
+            "item" : "3.4",
+            "count" : 9
+          }, {
+            "item" : "3.3",
+            "count" : 8
+          }, {
+            "item" : "5.7",
+            "count" : 7
+          }, {
+            "item" : "1.8",
+            "count" : 6
+          }, {
+            "item" : "2.1",
+            "count" : 5
+          }, {
+            "item" : "5.8",
+            "count" : 4
+          }, {
+            "item" : "6.9",
+            "count" : 3
+          }, {
+            "item" : "2.7",
+            "count" : 2
+          }, {
+            "item" : "1.7",
+            "count" : 1
+          } ],
+          "smallest" : "1.5",
+          "sum" : "162.7"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108129,
+        "name" : "Male, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "male",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363210,
+        "width" : 91,
+        "cachedContents" : {
+          "largest" : "17.399999999999999",
+          "non_null" : 48,
+          "average" : "6.270833333333333",
+          "null" : 4,
+          "top" : [ {
+            "item" : "5.2",
+            "count" : 20
+          }, {
+            "item" : "8.4",
+            "count" : 19
+          }, {
+            "item" : "5.4",
+            "count" : 18
+          }, {
+            "item" : "8.1",
+            "count" : 17
+          }, {
+            "item" : "3.2",
+            "count" : 16
+          }, {
+            "item" : "3.9",
+            "count" : 15
+          }, {
+            "item" : "3.7",
+            "count" : 14
+          }, {
+            "item" : "6.6",
+            "count" : 13
+          }, {
+            "item" : "5.7",
+            "count" : 12
+          }, {
+            "item" : "4.9000000000000004",
+            "count" : 11
+          }, {
+            "item" : "5.8",
+            "count" : 10
+          }, {
+            "item" : "4",
+            "count" : 9
+          }, {
+            "item" : "6",
+            "count" : 8
+          }, {
+            "item" : "5.0999999999999996",
+            "count" : 7
+          }, {
+            "item" : "6.5",
+            "count" : 6
+          }, {
+            "item" : "8.3000000000000007",
+            "count" : 5
+          }, {
+            "item" : "4.0999999999999996",
+            "count" : 4
+          }, {
+            "item" : "2.7",
+            "count" : 3
+          }, {
+            "item" : "4.3",
+            "count" : 2
+          }, {
+            "item" : "9.8000000000000007",
+            "count" : 1
+          } ],
+          "smallest" : "1.7",
+          "sum" : "301.0000000000000006"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108130,
+        "name" : "Male, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "male_2014",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379329,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "13.1",
+          "non_null" : 48,
+          "average" : "5.658333333333333",
+          "null" : 4,
+          "top" : [ {
+            "item" : "4.9",
+            "count" : 20
+          }, {
+            "item" : "8.6",
+            "count" : 19
+          }, {
+            "item" : "4.5",
+            "count" : 18
+          }, {
+            "item" : "7.2",
+            "count" : 17
+          }, {
+            "item" : "3.4",
+            "count" : 16
+          }, {
+            "item" : "4.6",
+            "count" : 15
+          }, {
+            "item" : "7.4",
+            "count" : 14
+          }, {
+            "item" : "5.4",
+            "count" : 13
+          }, {
+            "item" : "4.7",
+            "count" : 12
+          }, {
+            "item" : "3.6",
+            "count" : 11
+          }, {
+            "item" : "4.8",
+            "count" : 10
+          }, {
+            "item" : "3.7",
+            "count" : 9
+          }, {
+            "item" : "5.1",
+            "count" : 8
+          }, {
+            "item" : "5.8",
+            "count" : 7
+          }, {
+            "item" : "6.5",
+            "count" : 6
+          }, {
+            "item" : "9.1",
+            "count" : 5
+          }, {
+            "item" : "3.5",
+            "count" : 4
+          }, {
+            "item" : "3.1",
+            "count" : 3
+          }, {
+            "item" : "3.3",
+            "count" : 2
+          }, {
+            "item" : "3.0",
+            "count" : 1
+          } ],
+          "smallest" : "2.4",
+          "sum" : "271.6"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108131,
+        "name" : "Female, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "female",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363211,
+        "width" : 83,
+        "cachedContents" : {
+          "largest" : "4",
+          "non_null" : 35,
+          "average" : "1.662857142857143",
+          "null" : 17,
+          "top" : [ {
+            "item" : "1.5",
+            "count" : 20
+          }, {
+            "item" : "2.9",
+            "count" : 19
+          }, {
+            "item" : "1.7",
+            "count" : 18
+          }, {
+            "item" : "2.2000000000000002",
+            "count" : 17
+          }, {
+            "item" : "1",
+            "count" : 16
+          }, {
+            "item" : "1.1000000000000001",
+            "count" : 15
+          }, {
+            "item" : "1.2",
+            "count" : 14
+          }, {
+            "item" : "1.3",
+            "count" : 13
+          }, {
+            "item" : "2.4",
+            "count" : 12
+          }, {
+            "item" : "1.4",
+            "count" : 11
+          }, {
+            "item" : "0.9",
+            "count" : 10
+          }, {
+            "item" : "2.7",
+            "count" : 9
+          }, {
+            "item" : "1.8",
+            "count" : 8
+          }, {
+            "item" : "4",
+            "count" : 7
+          }, {
+            "item" : "0.8",
+            "count" : 6
+          }, {
+            "item" : "1.6",
+            "count" : 5
+          }, {
+            "item" : "1.9",
+            "count" : 4
+          }, {
+            "item" : "3.2",
+            "count" : 3
+          }, {
+            "item" : "0.7",
+            "count" : 2
+          } ],
+          "smallest" : "0.7",
+          "sum" : "58.2000000000000004"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108132,
+        "name" : "Female, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "female_2014",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379330,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "4.3",
+          "non_null" : 35,
+          "average" : "1.6",
+          "null" : 17,
+          "top" : [ {
+            "item" : "1.4",
+            "count" : 20
+          }, {
+            "item" : "2.6",
+            "count" : 19
+          }, {
+            "item" : "1.5",
+            "count" : 18
+          }, {
+            "item" : "2.2",
+            "count" : 17
+          }, {
+            "item" : "1.1",
+            "count" : 16
+          }, {
+            "item" : "1.3",
+            "count" : 15
+          }, {
+            "item" : "1.7",
+            "count" : 14
+          }, {
+            "item" : "0.9",
+            "count" : 13
+          }, {
+            "item" : "1.9",
+            "count" : 12
+          }, {
+            "item" : "2.8",
+            "count" : 11
+          }, {
+            "item" : "4.3",
+            "count" : 10
+          }, {
+            "item" : "0.8",
+            "count" : 9
+          }, {
+            "item" : "2.1",
+            "count" : 8
+          }, {
+            "item" : "2.9",
+            "count" : 7
+          }, {
+            "item" : "2.7",
+            "count" : 6
+          }, {
+            "item" : "1.2",
+            "count" : 5
+          } ],
+          "smallest" : "0.8",
+          "sum" : "56.0"
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "rdfSubject" : "0",
+        "custom_fields" : {
+          "Common Core" : {
+            "Contact Email" : "cdcinfo@cdc.gov",
+            "Contact Name" : "CDC INFO",
+            "Program Code" : "009:020",
+            "Bureau Code" : "009:00"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rowLabel" : "Row",
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "cg4e-25jx",
+        "displayName" : "iqw7@cdc.gov",
+        "roleName" : "publisher",
+        "screenName" : "iqw7@cdc.gov",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_nominations", "approve_nominations", "moderate_comments", "manage_stories", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "create_pages", "edit_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "manage_provenance", "view_story", "view_unpublished_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "cg4e-25jx",
+        "displayName" : "iqw7@cdc.gov",
+        "roleName" : "publisher",
+        "screenName" : "iqw7@cdc.gov",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_nominations", "approve_nominations", "moderate_comments", "manage_stories", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "create_pages", "edit_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "manage_provenance", "view_story", "view_unpublished_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "tags" : [ "centers for disease control and prevention", "cdc" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 1, "7CABF352-F030-44F1-B291-5C490AFCBA1A", 1, 1473965861, "863790", 1473965861, "863790", null, "United States", [ "{\"address\":\"United States\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "39.759995942000046", "-98.49999896099996", null, false ], "3.3", "3.1", "1.3", "1.2", "6.7", "6.2", "3.1", "3.0", "5.2", "4.9", "1.5", "1.4" ]
+, [ 2, "E0B95F3B-74F4-41B2-8521-3922F532A1DB", 2, 1473965861, "863790", 1473965861, "863790", null, "Alabama", [ "{\"address\":\"Alabama\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "32.84057234800002", "-86.63185738799996", null, false ], "5.5", "5.5", "2.7", "2.1", "10.3", "10.0", "5", "5.5", "8.4", "8.6", "2.9", "2.6" ]
+, [ 3, "61E55ADA-FDED-4F71-98AE-AD7D0AE5D23E", 3, 1473965861, "863790", 1473965861, "863790", null, "Alaska", [ "{\"address\":\"Alaska\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "64.84507799500005", "-147.72205958799998", null, false ], null, "2.8", null, null, null, null, null, null, null, null, null, null ]
+, [ 4, "6D2308E3-D15E-4E87-A902-C45A368D4D0A", 4, 1473965861, "863790", 1473965861, "863790", null, "Arizona", [ "{\"address\":\"Arizona\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "34.86597351900008", "-111.76380664699997", null, false ], "3.6", "3.0", "1.6", null, "6.9", "5.5", "3.3", "3.1", "5.4", "4.5", "1.7", "1.5" ]
+, [ 5, "C6077166-882C-4E27-97F8-D35BF90B76AE", 5, 1473965861, "863790", 1473965861, "863790", null, "Arkansas", [ "{\"address\":\"Arkansas\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "34.74865032200006", "-92.27448966799994", null, false ], "5.0999999999999996", "4.6", null, null, "10.5", "6.3", "4.3", "5.4", "8.1", "7.2", "2.2000000000000002", "2.2" ]
+, [ 6, "50B4FC04-1EEB-475A-9261-F08D64674D41", 6, 1473965861, "863790", 1473965861, "863790", null, "California", [ "{\"address\":\"California\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.63864210000003", "-120.99999644699994", null, false ], "2", "2.2", "0.9", "1.0", "4.5", "4.6", "1.8", "2.0", "3.2", "3.4", "1", "1.1" ]
+, [ 7, "E034380B-AE3D-48C9-ADEA-1DD7BCB2F27C", 7, 1473965861, "863790", 1473965861, "863790", null, "Colorado", [ "{\"address\":\"Colorado\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "38.84384342200008", "-106.13360911499996", null, false ], "2.5", "3.0", null, "1.7", "5.6", "5.6", "2", "2.6", "3.9", "4.6", "1.1000000000000001", "1.3" ]
+, [ 8, "5CC0BBD1-4720-4AD2-8868-95ACEBCD9945", 8, 1473965861, "863790", 1473965861, "863790", null, "Connecticut", [ "{\"address\":\"Connecticut\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "41.56266070000004", "-72.64983977999998", null, false ], "2.4", "2.7", null, null, "5.9", "6.1", "2.1", "2.5", "3.7", "4.6", "1.1000000000000001", null ]
+, [ 9, "07E37ABC-CA33-4B3B-889D-7A87FD3178C9", 9, 1473965861, "863790", 1473965861, "863790", null, "Delaware", [ "{\"address\":\"Delaware\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "39.00883389200004", "-75.57773597599999", null, false ], "3.8", "5.2", null, null, null, "11.7", "4", "4.6", "6.6", "7.4", null, null ]
+, [ 10, "6EBF546A-EF8F-4DD0-8C42-7DD975FDB75D", 10, 1473965861, "863790", 1473965861, "863790", null, "District of Columbia", [ "{\"address\":\"District of Columbia\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "38.89037258400003", "-77.03195678499998", null, false ], null, null, null, null, null, null, null, null, null, null, null, null ]
+, [ 11, "BF0F0A09-A8C5-4F33-B234-BE79A5B0FF4C", 11, 1473965861, "863790", 1473965861, "863790", null, "Florida", [ "{\"address\":\"Florida\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "28.932042722000062", "-81.92895768899996", null, false ], "3.7", "3.5", "1.2", "1.2", "8", "7.4", "3.3", "3.1", "5.7", "5.4", "1.7", "1.7" ]
+, [ 12, "3A255EB5-3029-4620-B582-296032A1CE00", 12, 1473965861, "863790", 1473965861, "863790", null, "Georgia", [ "{\"address\":\"Georgia\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "32.839683200000024", "-83.62757885599996", null, false ], "3", "2.7", "1", "0.8", "5.8", "5.2", "3.1", "2.9", "4.9000000000000004", "4.7", "1.2", "0.9" ]
+, [ 13, "F6343FF5-58C5-4145-B3F0-274A1E019C48", 13, 1473965861, "863790", 1473965861, "863790", null, "Hawaii", [ "{\"address\":\"Hawaii\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "21.30485232600006", "-157.85774798099996", null, false ], "3.8", "2.2", null, null, null, null, "3.2", null, "5.7", "3.6", null, null ]
+, [ 14, "2380A79C-F6A2-42AF-99C8-1190CFE14272", 14, 1473965861, "863790", 1473965861, "863790", null, "Idaho", [ "{\"address\":\"Idaho\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "43.68263174800006", "-114.36372693399994", null, false ], "3.6", "3.3", null, null, "8.6999999999999993", null, "2.7", "3.0", "5.8", "4.8", null, null ]
+, [ 15, "79C6E9F4-FB9D-4FC3-B2E1-F0386A236A0A", 15, 1473965861, "863790", 1473965861, "863790", null, "Illinois", [ "{\"address\":\"Illinois\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "40.48501223300008", "-88.99770922699997", null, false ], "2.5", "2.4", "0.7", "0.7", "6", "5.5", "2.1", "2.2", "4", "3.7", "1", "1.3" ]
+, [ 16, "B40E9CF7-0D9C-4D4F-88E2-52A2114136CB", 16, 1473965861, "863790", 1473965861, "863790", null, "Indiana", [ "{\"address\":\"Indiana\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "39.766913353000064", "-86.14995646699998", null, false ], "3.6", "3.2", "1.2", null, "7.2", "6.3", "3.5", "3.2", "6", "5.1", "1.3", "1.3" ]
+, [ 17, "5D605AA5-B309-4E8C-9BE2-40D86F0B9C28", 17, 1473965861, "863790", 1473965861, "863790", null, "Iowa", [ "{\"address\":\"Iowa\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "42.469401411000035", "-93.81648725599996", null, false ], "3.2", "3.0", null, null, "5.9", "4.6", "2.9", "3.4", "5.0999999999999996", "4.8", null, null ]
+, [ 18, "1AAF28D3-D5B3-4A10-ADAB-B7C582FA9678", 18, 1473965861, "863790", 1473965861, "863790", null, "Kansas", [ "{\"address\":\"Kansas\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "38.347742794000055", "-98.20077822999997", null, false ], "3.4", "3.6", "2.2999999999999998", null, "6", "7.4", "3", "3.3", "6", "5.8", null, "1.4" ]
+, [ 19, "A63AFD5D-1AE1-4624-8CCC-F82468E5D036", 19, 1473965861, "863790", 1473965861, "863790", null, "Kentucky", [ "{\"address\":\"Kentucky\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.64597313300004", "-84.77496771599994", null, false ], "4", "3.9", "1.8", "2.0", "7.2", "7.8", "3.7", "3.4", "6.5", "6.5", "1.5", "1.3" ]
+, [ 20, "F99891B6-8E66-4724-AF52-015CD43D43BD", 20, 1473965861, "863790", 1473965861, "863790", null, "Louisiana", [ "{\"address\":\"Louisiana\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "31.312663324000027", "-92.44567750499994", null, false ], "5.2", "5.4", "2.8", "1.8", "8.6", "9.4", "5.0999999999999996", "5.7", "8.3000000000000007", "9.1", "2.4", "1.9" ]
+, [ 21, "CFF85368-B981-42E3-A0B5-427E73179FF3", 21, 1473965861, "863790", 1473965861, "863790", null, "Maine", [ "{\"address\":\"Maine\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "45.25422910300006", "-68.98502586699993", null, false ], "3.8", "3.3", null, null, null, null, "2.8", "3.1", "6.6", "5.1", null, null ]
+, [ 22, "4C992248-389A-4A78-ABEE-6B8110C3E7C7", 22, 1473965861, "863790", 1473965861, "863790", null, "Maryland", [ "{\"address\":\"Maryland\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "39.290582950000044", "-76.60925984299996", null, false ], "2.7", "2.2", "1.6", null, "5.8", "5.4", "2.2000000000000002", "1.8", "4.0999999999999996", "3.5", "1.4", "0.9" ]
+, [ 23, "8F174254-3AE1-4221-90C0-B44302B6A492", 23, 1473965861, "863790", 1473965861, "863790", null, "Massachusetts", [ "{\"address\":\"Massachusetts\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "42.27687400000008", "-72.08268726299997", null, false ], "1.8", "1.9", null, null, "3.3", "4.0", "1.7", "1.8", "2.7", "3.1", "0.9", "0.9" ]
+, [ 24, "23838BD4-7F38-479D-979A-D47ACB710913", 24, 1473965861, "863790", 1473965861, "863790", null, "Michigan", [ "{\"address\":\"Michigan\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "44.66132238800003", "-84.71438555599997", null, false ], "2.7", "2.2", "1.1000000000000001", "1.0", "6.8", "5.1", "2", "1.8", "4.3", "3.3", "1.2", "1.1" ]
+, [ 25, "F027DEFD-A97C-4ED5-A45C-C77816B4A1BB", 25, 1473965861, "863790", 1473965861, "863790", null, "Minnesota", [ "{\"address\":\"Minnesota\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "46.35564896600005", "-94.79419983199995", null, false ], "2.1", "1.9", null, null, "3.7", "3.5", "2.2000000000000002", "2.1", "3.2", "3.0", "1.2", "0.9" ]
+, [ 26, "64F2DB09-0BB4-44E5-907C-B7AE5942466F", 26, 1473965861, "863790", 1473965861, "863790", null, "Mississippi", [ "{\"address\":\"Mississippi\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "32.745513440000025", "-89.53802722999995", null, false ], "6.1", "6.0", "2.6", "2.8", "12", "10.8", "5.7", "5.8", "9.8000000000000007", "9.4", "2.7", "2.8" ]
+, [ 27, "A9C39992-0B74-4975-AE79-2DDD00803D61", 27, 1473965861, "863790", 1473965861, "863790", null, "Missouri", [ "{\"address\":\"Missouri\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "38.63579147100006", "-92.56629944499997", null, false ], "4.8", "3.4", "1.9", null, "9.5", "6.9", "4.4000000000000004", "3.2", "7.8", "5.6", "1.8", "1.3" ]
+, [ 28, "4E0D5B74-13AF-42F5-80AF-139FF95647E1", 28, 1473965861, "863790", 1473965861, "863790", null, "Montana", [ "{\"address\":\"Montana\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "47.06652795700006", "-109.42441587999997", null, false ], "9.4", "7.3", null, null, "21.4", "15.4", "7.2", "6.9", "14.9", "10.2", "4", "4.3" ]
+, [ 29, "3E997A3A-3624-4BF7-8878-83FD169C1B81", 29, 1473965861, "863790", 1473965861, "863790", null, "Nebraska", [ "{\"address\":\"Nebraska\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "41.64104362100005", "-99.36571888999998", null, false ], "4", "3.3", null, null, "6.5", "7.0", "3.5", "3.0", "6.4", "5.0", null, null ]
+, [ 30, "F40A87F7-F885-413B-B0A9-ED9DBAACD771", 30, 1473965861, "863790", 1473965861, "863790", null, "Nevada", [ "{\"address\":\"Nevada\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "39.49324221300003", "-117.07183885899997", null, false ], "2.8", "3.3", null, null, "4.5999999999999996", "6.4", "3.2", "2.7", "4.2", "4.9", "1.4", "1.7" ]
+, [ 31, "108BC9B0-E983-460A-BD3D-0438A50E14EC", 31, 1473965861, "863790", 1473965861, "863790", null, "New Hampshire", [ "{\"address\":\"New Hampshire\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "43.65595283500005", "-71.50035697299995", null, false ], "2.4", "2.4", null, null, null, null, "2.9", null, "4.0999999999999996", "3.2", null, null ]
+, [ 32, "AF5D8065-4656-472D-908B-6DEEDC27D6AA", 32, 1473965861, "863790", 1473965861, "863790", null, "New Jersey", [ "{\"address\":\"New Jersey\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "40.130570807000026", "-74.27368796999997", null, false ], "1.8", "1.8", null, null, "4.5999999999999996", "3.6", "1.4", "1.7", "2.9", "2.9", "0.9", "0.8" ]
+, [ 33, "FB81B6F4-8765-429B-AB76-60A547DB9166", 33, 1473965861, "863790", 1473965861, "863790", null, "New Mexico", [ "{\"address\":\"New Mexico\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "34.52088149400004", "-106.24057817299996", null, false ], "4.8", "5.7", null, null, "9.1", "11.2", "4.5", "5.1", "6.9", "8.6", "2.9", "2.8" ]
+, [ 34, "F4CCE833-AEC2-4336-8618-4B360347CC5E", 34, 1473965861, "863790", 1473965861, "863790", null, "New York", [ "{\"address\":\"New York\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "42.82700376100007", "-75.54396609999998", null, false ], "1.7", "1.6", "0.6", "0.7", "3.3", "3.0", "1.7", "1.5", "2.7", "2.4", "0.8", "0.8" ]
+, [ 35, "554B5272-7114-488B-8C38-050B6FA89FD6", 35, 1473965861, "863790", 1473965861, "863790", null, "North Carolina", [ "{\"address\":\"North Carolina\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "35.466220159000045", "-79.15924997399998", null, false ], "4.2", "3.8", "1.7", "1.4", "8", "7.7", "4", "3.6", "6.8", "6.3", "1.7", "1.5" ]
+, [ 36, "B0F9425C-6514-418B-9CCF-2BC44937418F", 36, 1473965861, "863790", 1473965861, "863790", null, "North Dakota", [ "{\"address\":\"North Dakota\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "47.475318609000055", "-100.11842789099995", null, false ], "11.3", "7.2", null, null, "15.3", "15.2", "12", "6.1", "17.399999999999999", "10.7", null, null ]
+, [ 37, "E2105AD6-E887-4D19-8DE8-026C1E0C369E", 37, 1473965861, "863790", 1473965861, "863790", null, "Ohio", [ "{\"address\":\"Ohio\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "40.060212455000055", "-82.40425667899996", null, false ], "3.5", "2.7", "1.2", "0.8", "6.8", "5.6", "3.3", "2.6", "5.5", "4.2", "1.6", "1.3" ]
+, [ 38, "377EC60F-8A17-4FDF-909D-476D538C9D2A", 38, 1473965861, "863790", 1473965861, "863790", null, "Oklahoma", [ "{\"address\":\"Oklahoma\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "35.472030747000076", "-97.52106835299998", null, false ], "5.6", "4.0", null, null, "10.5", "7.4", "5.8", "3.9", "9.3000000000000007", "6.0", "1.9", "2.1" ]
+, [ 39, "82ED77A0-4F49-4250-98A2-6462B1ECD256", 39, 1473965861, "863790", 1473965861, "863790", null, "Oregon", [ "{\"address\":\"Oregon\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "44.56745049300008", "-120.15502935599994", null, false ], "2.2000000000000002", "2.5", null, null, "5.2", "4.2", "1.8", "2.6", "3.1", "3.7", "1.3", "1.4" ]
+, [ 40, "0AF33D2A-918F-4DE9-981D-00F2599CF22A", 40, 1473965861, "863790", 1473965861, "863790", null, "Pennsylvania", [ "{\"address\":\"Pennsylvania\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "40.79373362300004", "-77.86069690799997", null, false ], "3.3", "2.7", "1.4", "0.7", "7.2", "5.5", "2.8", "2.7", "5.4", "4.4", "1.3", "1.1" ]
+, [ 41, "3771E2C1-3431-447C-9AE2-019AF5AA608A", 41, 1473965861, "863790", 1473965861, "863790", null, "Rhode Island", [ "{\"address\":\"Rhode Island\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "41.70828106100004", "-71.52246566099996", null, false ], "2.2999999999999998", null, null, null, null, null, null, null, null, null, null, null ]
+, [ 42, "408FD342-188B-4811-B858-DADA44EC4C72", 42, 1473965861, "863790", 1473965861, "863790", null, "South Carolina", [ "{\"address\":\"South Carolina\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "33.99882216300006", "-81.04536596899999", null, false ], "7.6", "5.8", "2.8", "2.0", "14.2", "12.4", "7.6", "5.3", "12.3", "9.0", "3.2", "2.9" ]
+, [ 43, "9285239B-EB51-485D-B6BA-B25113430148", 43, 1473965861, "863790", 1473965861, "863790", null, "South Dakota", [ "{\"address\":\"South Dakota\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "44.35313004200003", "-100.37352915599996", null, false ], "5.7", "5.6", null, null, null, null, null, "6.2", "7.4", "8.7", null, null ]
+, [ 44, "97E15896-422F-4327-9F53-C0FF11A0B06A", 44, 1473965861, "863790", 1473965861, "863790", null, "Tennessee", [ "{\"address\":\"Tennessee\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "35.68094072700006", "-85.77448666899994", null, false ], "4.5999999999999996", "4.1", "1.6", null, "8", "8.2", "4.9000000000000004", "4.1", "7.5", "6.8", "1.8", "1.5" ]
+, [ 45, "BB1B0512-9852-4093-91F9-1B0C00B17159", 45, 1473965861, "863790", 1473965861, "863790", null, "Texas", [ "{\"address\":\"Texas\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "31.827240467000024", "-99.42676785299994", null, false ], "4.9000000000000004", "5.4", "2.1", "2.3", "10", "10.0", "4.7", "5.3", "7.6", "8.1", "2.4", "2.7" ]
+, [ 46, "DEE47720-B1F4-49CF-ADE3-E2474C56E47E", 46, 1473965861, "863790", 1473965861, "863790", null, "Utah", [ "{\"address\":\"Utah\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "39.36070123200005", "-111.58712831499997", null, false ], "1.2", "2.0", null, null, null, null, "1.9", "2.3", "1.7", "3.0", null, null ]
+, [ 47, "AD608E15-75BE-4526-9285-E40D70D59F9D", 47, 1473965861, "863790", 1473965861, "863790", null, "Vermont", [ "{\"address\":\"Vermont\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "43.62538389600007", "-72.51763667599994", null, false ], "3.4", null, null, null, null, null, null, null, null, null, null, null ]
+, [ 48, "64D40D0E-10EA-414D-A7D5-8416DFEC61C1", 48, 1473965861, "863790", 1473965861, "863790", null, "Virginia", [ "{\"address\":\"Virginia\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.542680705000066", "-78.45788932099998", null, false ], "2.5", "2.5", "1.2", "1.2", "4.5", "5.1", "2.6", "2.3", "4.0999999999999996", "3.9", "0.9", "1.2" ]
+, [ 49, "95A47EE9-20C7-4620-98D7-FC838BB32E68", 49, 1473965861, "863790", 1473965861, "863790", null, "Washington", [ "{\"address\":\"Washington\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "47.52228790000004", "-120.47002813699999", null, false ], "2.1", "1.9", null, null, "4", "3.4", "2", "1.9", "3.6", "2.9", "0.7", "0.9" ]
+, [ 50, "B958E16B-85B3-474F-9C06-3393B4B40F8C", 50, 1473965861, "863790", 1473965861, "863790", null, "West Virginia", [ "{\"address\":\"\",\"city\":\"West\",\"state\":\"Virginia\",\"zip\":\"\"}", "38.66551127300005", "-80.71263755899997", null, false ], "5.6", "4.7", null, null, "12.9", "10.0", "4.4000000000000004", "4.0", "9.3000000000000007", "7.1", null, null ]
+, [ 51, "D6C8E6A8-CB6C-4EDC-95BA-303359DB4175", 51, 1473965861, "863790", 1473965861, "863790", null, "Wisconsin", [ "{\"address\":\"Wisconsin\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "44.39319064600005", "-89.81636640199997", null, false ], "3.6", "2.9", "1.6", null, "6.5", "7.5", "3.5", "2.3", "5.6", "4.8", "1.6", "1.2" ]
+, [ 52, "AF45AE05-33C3-4C00-8E1D-A80CB1B24DEE", 52, 1473965861, "863790", 1473965861, "863790", null, "Wyoming", [ "{\"address\":\"Wyoming\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "43.23554100600006", "-108.10982701399996", null, false ], "7.1", "8.2", null, null, "17.3", null, null, "8.1", "11.3", "13.1", null, null ]
+ ]
+}
