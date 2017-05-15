@@ -37,7 +37,7 @@ Planet[] orbs;
 PFont font;
 float plotRadii, sclFactor;
 float attraction = 1.0f;
-Menu menu;
+Menu menuTop, menuBottom;
 int bgCol = 0xffddddff;
 
 public void setup() {
@@ -68,14 +68,15 @@ public void setup() {
   
   // Menu Setup
     String[] labels = {
-	    "worms", "rays", "blockies", "spiders", "soup"
+	    "California", "Alabama", "Arizona", "Colorado"
 	  };
     int[] states = {
 	    //offState, onState, overState, pressState
-	    0xffeebfbb, bgCol, 0xffeeffef, 0xffffaa66
+	    0xddeebfbb, bgCol, 0xffeeffef, 0xffffaa66
 	  };
     println("this = " + this);
-    menu = new Menu(this, Layout.TOP, new Dimension(width, 23), labels, states, ButtonType.RECT);
+    menuTop = new Menu(this, Layout.TOP, new Dimension(width, 23), labels, states, ButtonType.RECT);
+    menuBottom = new Menu(this, Layout.BOTTOM, new Dimension(width, 23), labels, states, ButtonType.RECT);
   
 }
 
@@ -111,7 +112,8 @@ public void draw() {
   camera(width/2.0f + adjZ, height/2.0f, ((height/2.0f)) / tan(PI*30.0f / 180.0f) ,   width/2.0f, height/2.0f, 0,   0, 1, 0);
   
   // display menu
-  menu.display();
+  menuTop.display();
+  menuBottom.display();
   
   fill(85);
   textFont(font, 23);
