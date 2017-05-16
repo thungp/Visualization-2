@@ -37,6 +37,7 @@ JSONArray deathColumnsArray;
 JSONArray deathDataArray;
 JSONArray californiaArray;
 JSONArray arizonaArray;
+JSONArray deathDataArray2; // 
 
 
 int adjZ = 0;
@@ -69,17 +70,27 @@ public void setup() {
   californiaArray = deathDataArray.getJSONArray(5);
   arizonaArray = deathDataArray.getJSONArray(3);
   //println(californiaArray);
-  println(arizonaArray);
+  //println(arizonaArray);
+  
+  deathDataArray2 = new JSONArray();
+  deathDataArray2.append(californiaArray);
+  deathDataArray2.append(arizonaArray);
+  //println(deathDataArray2);
+  
+  println("value 11 = " +  Float.parseFloat(deathDataArray2.getJSONArray(0).getString(10))); // index 10  = All Ages, 2012
   
   
   
   // size arrays
-  int dataSize = planetsData.size();
+  //int dataSize = planetsData.size
+  int dataSize = deathDataArray2.size();
   attraction = 1.0f - 1.0f/(dataSize*10);
 
   orbs = new PlanetRotate[dataSize];
   for (int i=0; i<dataSize; i++) {
-    plotRadii += PI*planetsData.getJSONObject(i).getFloat("mass")*planetsData.getJSONObject(i).getFloat("mass");
+    //plotRadii += PI*planetsData.getJSONObject(i).getFloat("mass")*planetsData.getJSONObject(i).getFloat("mass");
+    float value = Float.parseFloat(deathDataArray2.getJSONArray(0).getString(10));
+    plotRadii += PI*value*value;
   }
   float canvasArea = PI*(width/2.6f)*(width/2.6f);
   sclFactor = sqrt(canvasArea/plotRadii);
@@ -88,7 +99,9 @@ public void setup() {
 
   for (int i=0; i<dataSize; i++) {
     JSONObject planet = planetsData.getJSONObject(i); 
-    orbs[i] = new PlanetRotate(this, new PVector(random(-2, 2), random(-2, 2), random(-2, 2)), planet.getFloat("mass")*sclFactor, i, planet.getString("composition"));
+    //orbs[i] = new PlanetRotate(this, new PVector(random(-2, 2), random(-2, 2), random(-2, 2)), planet.getFloat("mass")*sclFactor, i, planet.getString("composition"));
+    float value = Float.parseFloat(deathDataArray2.getJSONArray(0).getString(10));
+    orbs[i] = new PlanetRotate(this, new PVector(random(-2, 2), random(-2, 2), random(-2, 2)), value*sclFactor, i, planet.getString("composition"));
   }
   
   // Menu Setup
@@ -142,7 +155,10 @@ public void draw() {
   
   fill(85);
   textFont(font, 23);
-  String ss = "FrameCount: " + frameCount + "  Planet ID:  " + orbs[0].id + "       Composition:  " + orbs[0].composition +"       Mass: " + orbs[0].radius;
+  String nameValue = deathDataArray2.getJSONArray(0).getString(8);
+  String allValue = deathDataArray2.getJSONArray(0).getString(10);
+
+  String ss = "FrameCount: " + frameCount + "  State ID:  " + nameValue + "       Name:  " + nameValue + "       All Ages, 2012(percentage): " + allValue;
   float ww = textWidth(ss);
   text(ss, (ww)/4, 35, height/2.0f);
   
