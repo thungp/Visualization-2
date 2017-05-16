@@ -30,6 +30,15 @@ public class spherePlot007_oop_java extends PApplet {
  */
 
 JSONArray planetsData;
+JSONObject deathData;
+JSONObject deathMetaDataObject;
+JSONObject deathViewDataObject;
+JSONArray deathColumnsArray;
+JSONArray deathDataArray;
+JSONArray californiaArray;
+JSONArray arizonaArray;
+
+
 int adjZ = 0;
 int adjZFactor = 100;
 
@@ -47,7 +56,23 @@ public void setup() {
 
   font = loadFont("ArialMT-148.vlw");
   // load JSON data
+  // Note: this stuff should get refactored into a nicer class.
   planetsData =loadJSONArray("planets.json");
+  deathData = loadJSONObject("Impaired_Driving_Death_Rate__by_Age_and_Gender__2012___2014__All_States.json");
+  deathMetaDataObject = deathData.getJSONObject("meta");
+  deathViewDataObject = deathMetaDataObject.getJSONObject("view");
+  deathColumnsArray = deathViewDataObject.getJSONArray("columns");
+  deathDataArray = deathData.getJSONArray("data");
+  //println(deathColumnsArray); // debug
+  
+  // for now, California is index 5, Arizona is Index 3
+  californiaArray = deathDataArray.getJSONArray(5);
+  arizonaArray = deathDataArray.getJSONArray(3);
+  //println(californiaArray);
+  println(arizonaArray);
+  
+  
+  
   // size arrays
   int dataSize = planetsData.size();
   attraction = 1.0f - 1.0f/(dataSize*10);
@@ -119,7 +144,7 @@ public void draw() {
   textFont(font, 23);
   String ss = "FrameCount: " + frameCount + "  Planet ID:  " + orbs[0].id + "       Composition:  " + orbs[0].composition +"       Mass: " + orbs[0].radius;
   float ww = textWidth(ss);
-  text(ss, (ww)/4, 30, height/2.0f);
+  text(ss, (ww)/4, 35, height/2.0f);
   
   translate(width/2, height/2 );
   // rotate around the center of the sketch
