@@ -18,6 +18,9 @@ public class spherePlot007_oop_java extends PApplet {
  Sphere Plot - 3D OOP
  planets JSON data
  interactive Feedback
+    Contributors:
+    Peter Thung
+    Daniel Vance
  
  Change Log:
  * Made Sphere randomly populate in the Z direction
